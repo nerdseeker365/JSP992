@@ -1,0 +1,33 @@
+SQL> create table BookStore(bookId number(5) primary key,bookName varchar2(15),authorName varchar2(15),price float ,publisher varchar2(15),status varchar2(10),category varchar2(10));
+
+SQL> select * from bookstore;
+
+    BOOKID BOOKNAME        AUTHORNAME           PRICE PUBLISHER       STATUS
+---------- --------------- --------------- ---------- --------------- ----------
+CATEGORY
+----------
+       101 CRJ             HS                     900 SunPress        yes
+java
+
+       102 TIJ             BE                     800 MH              yes
+java
+
+       103 EJ              BJ                     400 SunPress        yes
+java
+
+
+    BOOKID BOOKNAME        AUTHORNAME           PRICE PUBLISHER       STATUS
+---------- --------------- --------------- ---------- --------------- ----------
+CATEGORY
+----------
+       110 Esay.net        xyz                    200 MS              no
+.net
+
+       120 my.PHP          abc                    400 apache          yes
+php
+
+       121 our.PHP         mno                    500 apache          yes
+php
+
+
+6 rows selected.

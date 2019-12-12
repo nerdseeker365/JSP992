@@ -1,0 +1,11 @@
+SQL> desc naukri_info;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JSID                                      NOT NULL NUMBER(7)
+ NAME                                               VARCHAR2(15)
+ ADDRS                                              VARCHAR2(15)
+ AGE                                                FLOAT(3)
+ SKILL                                              VARCHAR2(25)
+ EXPERIENCE                                         FLOAT(3)
+ LOCATION                                           VARCHAR2(15)
+ EXPSAL                                             FLOAT(10)

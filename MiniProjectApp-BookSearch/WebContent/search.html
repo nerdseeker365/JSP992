@@ -1,0 +1,56 @@
+
+
+
+<script language="JavaScript">
+   function isHtml(){
+	   frm.source.value="Html";
+	   validate();
+   }
+   
+   function isExcel(){
+	   frm.source.value="excel";
+	   validate();
+   }
+   
+   function  validate(){
+	   if(frm.category.selectedIndex==0){
+		   document.getElementById("err").innerHTML="U Must Select Items";
+	        return false;
+	   }
+	   else{
+		   frm.submit();
+		   return true;
+	   }
+   } 
+   
+</script>
+
+
+<h1 style="color:red;text-align:center">Select Book Category to get the results</h1>
+
+  <span id="err"></span>
+  <form name="frm" action="controller"  method="POST" >
+      <table border=1>
+        <tr>
+            <td> Select Book Category </td>
+            <td> <select name="category"  multiple>
+                         <option  value=""  selected>-----</option>
+                         <option  value="java">JAVA</option>
+                         <option  value=".net">.NET</option>
+                         <option  value="php">PHP</option>
+                  </select>
+              </td>    
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="Htmloutput"  onclick="isHtml()">
+           </td>
+           <td>
+            <input type="button" value="Exceloutput"  onclick="isExcel()">
+           </td>
+        </tr>
+         <tr>
+            <td colspan="2"><input type="hidden" name="source"> </td>
+         </tr>
+      </table>
+  </form>
